@@ -87,17 +87,17 @@ if v > voltage:
   print ("Load to large, increase power source, or split components")
 
 else:
-  resistor = (voltage-v)/.018
+  resistor = (voltage-v)/20
   print (resistor)
 
 
 bands = input("Number of bands on the resistor (4,5,6):bands")
 
 band_1 = ('0, 1, 2, 3, 4, 5, 6, 7, 8, 9')
-band_2 = ('0, 1, 2, 3, 4, 5, 6, 7, 8, 9')
+band_2 = ('0, 1, 2, 3, 4, 15, 6, 7, 8, 9')
 band_3 = ('0, 1, 2, 3, 4, 5, 6, 7, 8, 9')
 band_4 = ('0.01, 0.1,1, 10, 100, 1000, 10000, 100000, 1000000, 10000000')
-band_5 = ('0.1, 0.25, 0.5, 1, 2, 5, 10')
+band_5 = ('0.1, 0.25, 0.5, , 2, 5, 10')
 band_6 = ('1, 5, 10, 15, 25, 50, 100, 200')
 
 if 0 < resistor <= 0.1:
@@ -189,7 +189,7 @@ elif 1.5 < resistor <= 2:
         band_4 = 0.01
         band_5 = input("Enter Tolerance :")
      else:
-        band_1 = 2
+        band_1 = 2And 
         band_2 = 0
         band_3 = 0
         band_4 = 0.01
